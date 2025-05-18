@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Full Height Navigation</title>
+    <style>
+        /* Reset default margin & padding */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Navigation bar */
+        .nav-wrapper {
+            display: flex;
+            align-items: center; /* Centers items vertically */
+            height: 60px; /* Fixed height */
+            background: green;
+            padding: 0 20px;
+        }
+
+        /* Make ul take full height */
+        .nav-wrapper ul {
+            display: flex;
+            align-items: stretch; /* Make li stretch fully */
+            height: 100%; /* Same height as nav-wrapper */
+            padding: 0;
+            margin: 0;
+            list-style: none;
+        }
+
+        /* Ensure li takes full height */
+        .nav-wrapper ul li {
+            display: flex;
+            align-items: center;
+            height: 100%;
+            padding: 0;
+        }
+
+        /* Ensure a fills li */
+        .nav-wrapper ul li a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0 20px;
+            height: 100%; /* Make anchor take full height */
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+
+        /* Full height hover effect */
+        .nav-wrapper ul li:hover {
+            background-color: rgba(0, 0, 0, 0.37);
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="nav-wrapper">
+        <!-- Logo -->
+        <a href="#" class="brand-logo">
+            <img src="logo.png" alt="Logo" style="height: 40px;">
+        </a>
+
+        <!-- Navigation Menu -->
+        <ul>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">Publications</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">Networks</a></li>
+            <li><a href="#">About</a></li>
+        </ul>
+    </nav>
+
+</body>
+</html>

@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Cantarell:ital,wght@0,400;0,700;1,400;1,700&family=Oxygen:wght@300;400;700&family=Roboto:ital@0;1&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+/* For all-use css declaration */
+html{
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+    font-weight: normal;
+    color: rgba(0, 0, 0, 0.87);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 1.5;
+    font-size: 19.2px;
+}
+
+:root{
+    --brand-color: #006933;
+    --background-color: rgba(0, 0, 0, 0.87);
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    /* justify-content: center;
+    align-items: center;
+    margin-block-start: 16px;
+    margin-block-end: 16px;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px; */
+}
+
+.flex{
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Header CSS */
+
+header{
+    border-bottom: 1px solid #fff;
+}
+.adbl-green{
+    background-color: var(--brand-color);
+}
+
+.row{
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+.wrapper{
+    width: 95%;
+    margin: 0 auto;
+}
+
+.wrapper-flex{
+    display: flex;
+    justify-content: end;
+}
+
+.top-link{
+    margin-bottom: 16px;
+}
+
+.top-link a{
+    line-height: 14.4px;
+    font-size: 12.325px;
+    margin: 0 8px;
+    font-weight: 300;
+}
+
+.adbl-yellow-text{
+    color: #FEF701;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Navigation CSS */
+
+nav{
+    width: 100%;
+}
+
+nav .nav-wrapper {
+    height: 64px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    /* border: 1px solid; */
+    padding: 0;
+}
+
+nav a{
+    font-weight: 700;
+}
+
+nav.brand-logo{
+    position: absolute;
+    font-size: 2.1rem;
+    padding: 0;
+}
+
+nav .brand-logo .img{
+    margin-top: -25px;
+}
+
+nav ul{
+    height: 100%;
+    align-items: stretch;
+}
+
+nav ul li {
+    /* border: 1px solid red; */
+    display: flex;
+    align-items: center;
+}
+
+nav ul li:hover{
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+nav ul li .dropdown-trigger{
+    cursor: pointer;
+    font-size: 14.5px;
+    color: #fff;
+    padding: 0 15px;
+}
+
+.dropdown-trigger i{
+    font-size: 8.7px;
+    width: 7.5px;
+    height: 11px;
+    margin: 0 4px;
+
+}
+
+/* ADBL Red Line */
+.line{
+    height: 4px;
+}
+
+.adbl-red{
+    background-color: #8A000D;
+}
